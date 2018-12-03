@@ -1,0 +1,106 @@
+
+#contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+#contact span {
+    display: inline-block;
+    font-size: 100px;
+    animation: textAnimation 16s ease infinite alternate,
+                swing 2s linear infinite alternate;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: rotateZ(0deg);
+        color: black;
+    }
+    10% {
+        transform: rotateZ(-30deg);
+        color: purple;
+    }
+    20% {
+        transform: rotateZ(0deg);
+        color: red;
+    }
+
+    30% {
+        transform: rotateZ(30deg);
+        color: orange;
+    }
+
+    40% {
+        transform: rotateZ(180deg);
+
+        color: yellow;
+    }
+    64% {
+        transform: translateX(5px);
+        color: chartreuse;
+    }
+    68% {
+        transform: translateX(-5px);
+        color: green;
+    }
+    70% {
+        transform: translateX(3px);
+        color: blue;
+    }
+    72% {
+        transform: translateX(-3px);
+        color: darkblue;
+    }
+    74% {
+        transform: translateX(2px);
+        color: brown;
+    }
+    76% {
+        transform: translateX(0);
+        color: darkgray;
+    }
+    100% {
+        transform: rotateZ(360deg);
+        color: black;
+    }
+}
+
+#contact form input, #contact form textarea{
+    width: 500px;
+    box-sizing: border-box;
+    border: 8px groove silver;
+    border-radius: 20px 10px;
+    font-size: 20px;
+    transition: all 0.4s ease;
+    margin: 0px;
+
+}
+
+#contact form input[name="comment"] {
+    height: 200px;
+    overflow: scroll;
+
+}
+
+#contact form input[type="submit"], #contact form input[type="reset"] {
+    background-image: url("../images/menu.jpg");
+    color: silver;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#contact form input[type="submit"]:hover, #contact form input[type="reset"]:hover,
+#contact form input[type="submit"]:active, #contact form input[type="reset"]:active {
+    background-image: url("../images/menuhover.jpg");
+}
+
+#contact form input[type="submit"]:active, #contact form input[type="reset"]:active {
+    border-bottom: 2px;
+    transform: translateY(15px);
+
+}

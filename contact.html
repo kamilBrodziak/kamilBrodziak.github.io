@@ -8,6 +8,8 @@
         <meta name="author" content="Kamil Brodziak">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/contact.css">
+        <link rel="stylesheet" type="text/css" href="styles/navigation.css">
+
 
     </head>
     <body onload="changeActivePageInMenu(document.getElementsByClassName('page_menu')[4])">
@@ -54,23 +56,23 @@
                         <a target="blank" href="" title="Youtube"><img class="social_icons" src="images/youtube.png" alt="Youtube" onmouseover="this.src='images/youtubehover.png';" onmouseout="this.src='images/youtube.png';"/></a> 
                     </div>
                 </nav>
-                <main id="middle_field">
+                <article id="middle_field">
                     <div id ="contact">
                         <br/><br/><br/><br/><br/><br/>
                         <span>Write me an email! :)</span>
                         <br/><br/><br/><br/><br/><br/>
-                        <form id="emailSent" action="#" method="post" enctype="text/plain">
-                            Name:<br>
-                            <input type="text" name="name"><br>
-                            E-mail:<br>
-                            <input id="emailAddress" type="text" name="email"><br>
-                            Comment:<br>
-                            <textarea name="comment" rows="8" maxlength="312"></textarea><br><br>
-                            <input type="submit" value="Send" onclick="validate();">
+                        <form id="emailSent" action="#" enctype="text/plain">
+                            Name:*<br>
+                            <input type="text" name="name" placeholder="example name" required>
+                            <br>E-mail:*<br>
+                            <input id="emailAddress" type="text" name="email" placeholder="example@example.com" onfocusout="validate()" required>
+                            <br>Comment:*<br>
+                            <textarea name="comment" rows="8" maxlength="312" required></textarea><br><br>
+                            <input id ="submitButton" type="submit" value="Send" disabled="disabled">
                             <input type="reset" value="Reset">
                             </form>
                     </div>
-                </main>
+                </article>
                 <div id="bottom_field"> 
                         <span id="text_bottom_field">
                             Strona stworzona przez Kamila Brodziaka. Wszelkie prawa zastrzeżone.

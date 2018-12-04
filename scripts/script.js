@@ -16,12 +16,15 @@ function validateEmail(email) {
   
 function validate() {
     var email = document.getElementById('emailAddress');
+    var submit = document.getElementById("submitButton");
 
     if (validateEmail(email.value)) {
+        email.removeAttribute("class");
+        submit.removeAttribute("disabled");
         return true;
     }
-    document.getElementById("emailAddress").focus();
-    alert("Invalid email! Try schemat example@example.exam");
+    submit.setAttribute("disabled", "disabled");
+    email.setAttribute("class", "invalidOutput");
     return false;
 }
   

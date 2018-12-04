@@ -11,6 +11,9 @@
 #contact span {
     display: inline-block;
     font-size: 100px;
+    text-shadow: 2px 2px silver, 
+                4px 4px silver, 
+                6px 6px silver;
     animation: textAnimation 16s ease infinite alternate,
                 swing 2s linear infinite alternate;
 }
@@ -94,7 +97,7 @@
     transition: all 0.4s ease;
 }
 
-#contact form input[type="submit"]:hover, #contact form input[type="reset"]:hover,
+#contact form input[type="submit"]:enabled:hover, #contact form input[type="reset"]:enabled:hover,
 #contact form input[type="submit"]:active, #contact form input[type="reset"]:active {
     background-image: url("../images/menuhover.jpg");
 }
@@ -102,5 +105,24 @@
 #contact form input[type="submit"]:active, #contact form input[type="reset"]:active {
     border-bottom: 2px;
     transform: translateY(15px);
+}
 
+#contact form input:disabled {
+    cursor: not-allowed;
+    color: rgb(100, 99, 99);
+    border: 8px groove rgb(100, 99, 99);
+
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.invalidOutput {
+    color: red;
 }

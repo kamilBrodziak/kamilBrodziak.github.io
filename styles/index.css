@@ -26,7 +26,7 @@
 #middle_field ul li {
     padding: 1%;
     border-bottom: 6px solid;
-    border-image: linear-gradient(to right, silver ,rgb(228, 228, 228),  transparent);
+    border-image: linear-gradient(to right, silver ,rgba(228, 228, 228),  transparent);
     border-image-slice: 1;
   }
 

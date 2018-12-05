@@ -109,8 +109,8 @@
 
 #contact form input:disabled {
     cursor: not-allowed;
-    color: rgb(100, 99, 99);
-    border: 8px groove rgb(100, 99, 99);
+    color: rgba(100, 99, 99);
+    border: 8px groove rgba(100, 99, 99);
 
 }
 

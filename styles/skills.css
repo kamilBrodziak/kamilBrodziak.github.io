@@ -28,9 +28,7 @@
         z-index: 15;
         top: 5%;
         margin-left: 20%;
-        background: rgb(98, 98, 98, 0.9);
-        opacity: 0.9;
-        visibility: visible;
+        background: rgba(98, 98, 98, 0.9);
         cursor: pointer;
         transform: rotate3d(0, 0, 0, 0deg);
     }

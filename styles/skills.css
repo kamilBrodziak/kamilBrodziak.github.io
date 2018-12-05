@@ -8,14 +8,14 @@
 }
 
 #firstPage {
-    background: rgb(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
     margin-left: 20%;
     z-index: 16;
     cursor: default;
 }
 
 #secondPage {
-    background: rgb(98, 98, 98, 0.9);
+    background: rgba(98, 98, 98, 0.9);
     margin-left: 25%;
     z-index: 15;
     top: 5%;
@@ -29,6 +29,8 @@
         top: 5%;
         margin-left: 20%;
         background: rgb(98, 98, 98, 0.9);
+        opacity: 0.9;
+        visibility: visible;
         cursor: pointer;
         transform: rotate3d(0, 0, 0, 0deg);
     }
@@ -43,7 +45,7 @@
     }
     100% {
         cursor: default;
-        background: rgb(255, 255, 255, 1);
+        background: rgba(255, 255, 255, 1);
         margin-left: 20%;
         z-index: 16;
         top: 0%;
@@ -56,7 +58,7 @@
         z-index: 15;
         top: 5%;
         margin-left: 25%;
-        background: rgb(98, 98, 98, 0.9);
+        background: rgba(98, 98, 98, 0.9);
         cursor: pointer;
         transform: rotate3d(0, 0, 0, 0deg);
     }
@@ -72,7 +74,7 @@
     100% {
         cursor: default;
         margin-left: 25%;
-        background: rgb(255, 255, 255, 1);
+        background: rgba(255, 255, 255, 1);
         z-index: 16;
         top: 0;
         transform: rotate3d(0, 0, 0, 0deg);
@@ -95,7 +97,7 @@
 
 h1 {
     text-align: center;
-    font-size: 200%;
+    font-size: 2vw;
     text-shadow: 5px 5px 30px black;
     vertical-align: middle;
     float: left;
@@ -112,6 +114,7 @@ h1 {
 
 h2 {
     margin-left: 5%;
+    font-size: 1.5vw;
 }
 
 table {
@@ -119,6 +122,7 @@ table {
     border-bottom: 4px groove silver;
     width: 90%;
     margin-left: 5%;
+    font-size: 1vw;
 }
 
 th:first-child {

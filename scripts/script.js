@@ -3,8 +3,10 @@ function validateEmail(email) {
     return re.test(email);
   }
   
-function validate() {
-    var email = document.getElementById('emailAddress');
+const email = document.getElementById("emailAddress");
+email.addEventListener("focusout", validate);
+
+function validate()  {
     var submit = document.getElementById("submitButton");
 
     if (validateEmail(email.value)) {
@@ -15,5 +17,5 @@ function validate() {
     submit.setAttribute("disabled", "disabled");
     email.setAttribute("class", "invalidOutput");
     return false;
-}
+};
   

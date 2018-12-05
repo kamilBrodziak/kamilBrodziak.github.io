@@ -10,15 +10,14 @@
 #firstPage {
     background: rgb(255, 255, 255, 1);
     margin-left: 20%;
-    z-index: 17;
+    z-index: 16;
     cursor: default;
-    pointer-events: none;
 }
 
 #secondPage {
     background: rgb(98, 98, 98, 0.9);
     margin-left: 25%;
-    z-index: 14;
+    z-index: 15;
     top: 5%;
     cursor: pointer;
 }
@@ -26,47 +25,57 @@
 
 @keyframes firstPageActivate {
     0% {
-        z-index: 14;
+        z-index: 15;
         top: 5%;
         margin-left: 20%;
         background: rgb(98, 98, 98, 0.9);
         cursor: pointer;
+        transform: rotate3d(0, 0, 0, 0deg);
     }
-    1% {
+    49% {
+        z-index: 15;
     }
     50% {
         margin-left: 5%;
-        z-index: 17;
+        z-index: 16;
         top: 0%;
+        transform: rotate3d(0, 1, 0, var(--m, deg));
     }
     100% {
         cursor: default;
         background: rgb(255, 255, 255, 1);
         margin-left: 20%;
-        z-index: 17;
+        z-index: 16;
         top: 0%;
+        transform: rotate3d(0, 0, 0, 0deg);
     }
 }
 
 @keyframes secondPageActivate {
     0% {
-        z-index: 14;
+        z-index: 15;
         top: 5%;
         margin-left: 25%;
         background: rgb(98, 98, 98, 0.9);
         cursor: pointer;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    49% {
+        z-index: 15;
     }
     50% {
         margin-left: 45%;
-        z-index: 17;
+        z-index: 16;
         top: 0;
+        transform: rotate3d(0, 1, 0, var(--n, deg));
     }
     100% {
         cursor: default;
         margin-left: 25%;
         background: rgb(255, 255, 255, 1);
-        z-index: 17;
+        z-index: 16;
         top: 0;
+        transform: rotate3d(0, 0, 0, 0deg);
     }
 }
 

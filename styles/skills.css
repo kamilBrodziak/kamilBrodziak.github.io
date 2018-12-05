@@ -116,7 +116,7 @@ th:first-child {
     padding-left: 10%;
 }
 
-#personal th{
+#personal th, #languages th, #itLanguages th{
     width: 45%;
     text-align: start;
 }

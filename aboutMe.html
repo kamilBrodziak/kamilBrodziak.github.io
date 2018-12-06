@@ -3,16 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Kamil Brodziak page</title>
-        <meta name="description" content="Contact - Kamil Brodziak">
+        <meta name="description" content="About Kamil Brodziak">
         <meta name="keywords" content="skills, java, web">
         <meta name="author" content="Kamil Brodziak">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/contact.css">
         <link rel="stylesheet" type="text/css" href="styles/navigation.css">
 
-
     </head>
-    <body onload="changeActivePageInMenu(document.getElementsByClassName('page_menu')[4])">
+    <body onload="changeActivePageInMenu(document.getElementsByClassName('page_menu')[1])">
         <div id="container">
                 <nav>
                     <ul id="sideMenu">
@@ -71,30 +69,13 @@
                     </div>
                 </nav>
                 <div id="middleField">
-                    <div id ="contact">
-                        <br/><br/><br/><br/><br/><br/>
-                        <span>Write me an email! :)</span>
-                        <br/><br/><br/><br/><br/><br/>
-                        <form id="emailForm" action="#" enctype="text/plain">
-                            Name:*<br>
-                            <input type="text" name="name" placeholder="example name" required>
-                            <br>E-mail:*<br>
-                            <input id="emailAddress" type="text" name="email" placeholder="example@example.com" required>
-                            <br>Comment:*<br>
-                            <textarea name="comment" rows="8" maxlength="312" required></textarea><br><br>
-                            <input id="submitButton" type="submit" value="Send" disabled="disabled">
-                            <input id="resetButton" type="reset" value="Reset">
-                            </form>
-                    </div>
                 </div>
-                <div> 
+                <footer> 
                         <span id="textFooter">
                             Page created and owned by Kamil Brodziak. All rights reserved.
                         </span>
-                </div>
+                </footer>
             </div>
-        <script src="scripts/navigation.js"></script>
-        <script src="scripts/script.js"></script> 
-
+        <script src="scripts/navigation.js"></script> 
     </body>
 </html>

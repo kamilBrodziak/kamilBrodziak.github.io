@@ -1,5 +1,5 @@
 nav {
-    grid-area: main_menu;
+    grid-area: mainMenu;
     z-index: 11;
     position: sticky;
     top: 0;
@@ -9,74 +9,69 @@ nav {
     padding: 0px;
 }
 
-ul#side_menu
-{
-margin: 0px;
-padding: 0px;
-}
-ul#side_menu li
-{
-display: block;
-list-style-type: none;
-border: groove silver;
-border-width: 5px 0px 5px 2px;
-height: 120px;
-width: 100%;
-transition: all 0.4s ease;
-background-image: url('../images/menu.jpg');
+ul#sideMenu {
+    margin: 0px;
+    padding: 0px;
 }
 
-ul#side_menu li a
-{
-display: flex;
-flex-direction: column;
-height: 120px;
-text-align: center;
-font-size: 1.1vw;
-line-height: 18px;
-justify-content: center;
-align-items: center;
+ul#sideMenu li {
+    display: block;
+    list-style-type: none;
+    border: groove silver;
+    border-width: 5px 0px 5px 2px;
+    height: 120px;
+    width: 100%;
+    transition: all 0.4s ease;
+    background-image: url('../images/menu.jpg');
 }
 
-ul#side_menu li a img
-{
-display: block;
-width: 70px;
-height: 70px;
-margin-bottom: 2px;
+ul#sideMenu li a {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    text-align: center;
+    font-size: 1.1vw;
+    line-height: 18px;
+    justify-content: center;
+    align-items: center;
 }
 
-ul#side_menu li:hover, ul#side_menu li:active, ul#side_menu li#actual_page{
-background-image: url('../images/menuhover.jpg');
-width: 90px;
-border: groove silver;
-border-width: 5px 4px 10px 11px;
-margin-top: -5px;
-margin-left: 20px;
+ul#sideMenu li a img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 2px;
 }
 
-ul#side_menu li#actual_page {
-transition: 0s;
+ul#sideMenu li:hover, ul#sideMenu li:active, ul#sideMenu li#actualPage {
+    background-image: url('../images/menuhover.jpg');
+    width: 90px;
+    border: groove silver;
+    border-width: 5px 4px 10px 11px;
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+ul#sideMenu li#actualPage {
+    transition: 0s;
 }
 
 /*contact_box*/
-nav div
-{
-border: groove silver;
-border-width: 5px 2px 5px 0px;
-padding: 2px 0px 0px 8px;
+nav div {
+    border: groove silver;
+    border-width: 5px 2px 5px 0px;
+    padding: 2px 0px 0px 8px;
 }
 
-nav div img.social_icons
-{
-padding: 5px 0px 0px 5px;
-width: 30px;
-height: 30px;
+nav div img.socialIcons {
+    padding: 5px 0px 0px 5px;
+    width: 30px;
+    height: 30px;
 }
 
-#bottom_field
+footer
 {
-    grid-area: bottom_field;
+    grid-area: bottomFooter;
     background-image: url('../images/menu.jpg');
     border-top: 5px groove silver;
     text-align: center;
@@ -85,7 +80,7 @@ height: 30px;
     font-size: 1.1vw;
     line-height: 20px;
 }
-span#text_bottom_field
+span#textFooter
 {
     display: inline-block;
     padding-top: 5px;

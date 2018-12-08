@@ -38,6 +38,9 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+    body {
+        height: 100vmax;
+    }
     #container {
         display: grid;
         grid-template-columns: 100%;

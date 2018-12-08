@@ -41,7 +41,7 @@ body {
     #container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 13% 82% 5%;
+        grid-template-rows: 13% 77% 5%;
         grid-template-areas:
             "mainMenu"
             "content"

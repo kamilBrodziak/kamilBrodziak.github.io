@@ -10,64 +10,64 @@
         <link rel="stylesheet" type="text/css" href="styles/navigation.css">
         <link rel="stylesheet" type="text/css" href="styles/index.css">
     </head>
-    <body onload="changeActivePageInMenu(document.getElementsByClassName('page_menu')[0])">
+    <body>
         <div id="container">
-                <nav>
-                    <ul id="sideMenu">
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="index.html" class="links">
-                                <img src="images/homeMenu.png" alt="Main"/>Main
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="aboutMe.html" class="links">
-                                <img src="images/articlesMenu.png" alt="About me"  />
-                                About me
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="skills.html" class="links" >
-                                <img src="images/cv.png" alt="CV"/>
-                                CV
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="projects.html" class="links">
-                                <img src="images/projects.png" alt="Projects"  />
-                                Projects
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePmenuhoverageInMenu(this)">
-                            <a href="contact.html" class="links">
-                                <img src="images/contact.png" alt="Contact"  />
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <div>
-                        <a target="blank" href="https://www.facebook.com/KamilPretendent/" title="Facebook">
-                            <img class="socialIcons" src="images/facebook.png" alt="Facebook" 
-                                onmouseover="this.src='images/facebookhover.png';" 
-                                onmouseout="this.src='images/facebook.png';"/>
+            <nav>
+                <ul id="sideMenu">
+                    <li class="menuOption" id="actualPage">
+                        <a href="index.html" class="links">
+                            <img src="images/homeMenu.png" alt="Main"/>
+                            Main
                         </a>
-                        <a target="blank" href="https://www.instagram.com/pretendenci/" title="Instagram">
-                            <img class="socialIcons" src="images/instagram.png" alt="Instagram" 
-                                onmouseover="this.src='images/instagramhover.png';" 
-                                onmouseout="this.src='images/instagram.png';"/>
+                    </li>
+                    <li class="menuOption">
+                        <a href="aboutMe.html" class="links">
+                            <img src="images/articlesMenu.png" alt="About me"/>
+                            About me
                         </a>
-                        <br>
-                        <a href="mailto:kamilb@pretendenci.pl" title="Napisz do mnie" > 
-                            <img class="socialIcons" src="images/gmail.png" alt="E-mail" 
-                                onmouseover="this.src='images/gmailhover.png';" 
-                                onmouseout="this.src='images/gmail.png';"/>
+                    </li>
+                    <li class="menuOption">
+                        <a href="skills.html" class="links" >
+                            <img src="images/cv.png" alt="CV"/>
+                            CV
                         </a>
-                        <a target="blank" href="" title="Youtube">
-                            <img class="socialIcons" src="images/youtube.png" alt="Youtube" 
-                                onmouseover="this.src='images/youtubehover.png';" 
-                                onmouseout="this.src='images/youtube.png';"/>
-                        </a> 
-                    </div>
-                </nav>
+                    </li>
+                    <li class="menuOption">
+                        <a href="projects.html" class="links">
+                            <img src="images/projects.png" alt="Projects"/>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="menuOption">
+                        <a href="contact.html" class="links">
+                            <img src="images/contact.png" alt="Contact"/>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div id="contactBox">
+                    <a target="blank" href="https://www.facebook.com/KamilPretendent/" title="Facebook">
+                        <img class="socialIcons" src="images/facebook.png" alt="Facebook" 
+                            onmouseover="this.src='images/facebookhover.png';" 
+                            onmouseout="this.src='images/facebook.png';"/>
+                    </a>
+                    <a target="blank" href="https://www.instagram.com/pretendenci/" title="Instagram">
+                        <img class="socialIcons" src="images/instagram.png" alt="Instagram" 
+                            onmouseover="this.src='images/instagramhover.png';" 
+                            onmouseout="this.src='images/instagram.png';"/>
+                    </a>
+                    <a href="mailto:kamilb@pretendenci.pl" title="Napisz do mnie" > 
+                        <img class="socialIcons" src="images/gmail.png" alt="E-mail" 
+                            onmouseover="this.src='images/gmailhover.png';" 
+                            onmouseout="this.src='images/gmail.png';"/>
+                    </a>
+                    <a target="blank" href="" title="Youtube">
+                        <img class="socialIcons" src="images/youtube.png" alt="Youtube" 
+                            onmouseover="this.src='images/youtubehover.png';" 
+                            onmouseout="this.src='images/youtube.png';"/>
+                    </a> 
+                </div>
+            </nav>
                 <article id="middleField">
                     <h1>Welcome visitor on my page!</h1>
                     <h2>I want to introduce you my skills, projects, offer and of course myself :)</h2>
@@ -98,6 +98,5 @@
                     </span>
                 </footer>
             </div>
-        <script src="scripts/navigation.js"></script> 
     </body>
 </html>

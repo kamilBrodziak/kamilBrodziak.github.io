@@ -9,91 +9,87 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/contact.css">
         <link rel="stylesheet" type="text/css" href="styles/navigation.css">
-
-
     </head>
-    <body onload="changeActivePageInMenu(document.getElementsByClassName('page_menu')[4])">
+    <body>
         <div id="container">
-                <nav>
-                    <ul id="sideMenu">
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="index.html" class="links">
-                                <img src="images/homeMenu.png" alt="Main"/>Main
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="aboutMe.html" class="links">
-                                <img src="images/articlesMenu.png" alt="About me"  />
-                                About me
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="skills.html" class="links" >
-                                <img src="images/cv.png" alt="CV"/>
-                                CV
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
-                            <a href="projects.html" class="links">
-                                <img src="images/projects.png" alt="Projects"  />
-                                Projects
-                            </a>
-                        </li>
-                        <li class="pageMenuLink" onclick="changeActivePmenuhoverageInMenu(this)">
-                            <a href="contact.html" class="links">
-                                <img src="images/contact.png" alt="Contact"  />
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <div>
-                        <a target="blank" href="https://www.facebook.com/KamilPretendent/" title="Facebook">
-                            <img class="socialIcons" src="images/facebook.png" alt="Facebook" 
-                                onmouseover="this.src='images/facebookhover.png';" 
-                                onmouseout="this.src='images/facebook.png';"/>
+            <nav>
+                <ul id="sideMenu">
+                    <li class="menuOption">
+                        <a href="index.html" class="links">
+                            <img src="images/homeMenu.png" alt="Main"/>
+                            Main
                         </a>
-                        <a target="blank" href="https://www.instagram.com/pretendenci/" title="Instagram">
-                            <img class="socialIcons" src="images/instagram.png" alt="Instagram" 
-                                onmouseover="this.src='images/instagramhover.png';" 
-                                onmouseout="this.src='images/instagram.png';"/>
+                    </li>
+                    <li class="menuOption">
+                        <a href="aboutMe.html" class="links">
+                            <img src="images/articlesMenu.png" alt="About me"/>
+                            About me
                         </a>
-                        <br>
-                        <a href="mailto:kamilb@pretendenci.pl" title="Napisz do mnie" > 
-                            <img class="socialIcons" src="images/gmail.png" alt="E-mail" 
-                                onmouseover="this.src='images/gmailhover.png';" 
-                                onmouseout="this.src='images/gmail.png';"/>
+                    </li>
+                    <li class="menuOption">
+                        <a href="skills.html" class="links" >
+                            <img src="images/cv.png" alt="CV"/>
+                            CV
                         </a>
-                        <a target="blank" href="" title="Youtube">
-                            <img class="socialIcons" src="images/youtube.png" alt="Youtube" 
-                                onmouseover="this.src='images/youtubehover.png';" 
-                                onmouseout="this.src='images/youtube.png';"/>
-                        </a> 
-                    </div>
-                </nav>
+                    </li>
+                    <li class="menuOption">
+                        <a href="projects.html" class="links">
+                            <img src="images/projects.png" alt="Projects"/>
+                            Projects
+                        </a>
+                    </li>
+                    <li class="menuOption" id="actualPage">
+                        <a href="contact.html" class="links">
+                            <img src="images/contact.png" alt="Contact"/>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div id="contactBox">
+                    <a target="blank" href="https://www.facebook.com/KamilPretendent/" title="Facebook">
+                        <img class="socialIcons" src="images/facebook.png" alt="Facebook" 
+                            onmouseover="this.src='images/facebookhover.png';" 
+                            onmouseout="this.src='images/facebook.png';"/>
+                    </a>
+                    <a target="blank" href="https://www.instagram.com/pretendenci/" title="Instagram">
+                        <img class="socialIcons" src="images/instagram.png" alt="Instagram" 
+                            onmouseover="this.src='images/instagramhover.png';" 
+                            onmouseout="this.src='images/instagram.png';"/>
+                    </a>
+                    <a href="mailto:kamilb@pretendenci.pl" title="Napisz do mnie" > 
+                        <img class="socialIcons" src="images/gmail.png" alt="E-mail" 
+                            onmouseover="this.src='images/gmailhover.png';" 
+                            onmouseout="this.src='images/gmail.png';"/>
+                    </a>
+                    <a target="blank" href="" title="Youtube">
+                        <img class="socialIcons" src="images/youtube.png" alt="Youtube" 
+                            onmouseover="this.src='images/youtubehover.png';" 
+                            onmouseout="this.src='images/youtube.png';"/>
+                    </a> 
+                </div>
+            </nav>
                 <div id="middleField">
-                    <div id ="contact">
-                        <br/><br/><br/><br/><br/><br/>
-                        <span>Write me an email! :)</span>
-                        <br/><br/><br/><br/><br/><br/>
-                        <form id="emailForm" action="#" enctype="text/plain">
-                            Name:*<br>
-                            <input type="text" name="name" placeholder="example name" required>
-                            <br>E-mail:*<br>
-                            <input id="emailAddress" type="text" name="email" placeholder="example@example.com" required>
-                            <br>Comment:*<br>
-                            <textarea name="comment" rows="8" maxlength="312" required></textarea><br><br>
+                    <div id="contact">
+                        <h1>Write me an email! :)</h1>
+                        <form id="emailForm" action="https://formspree.io/kamil98brodziak@gmail.com" method="POST">
+                            <label for="name">Name:*</label>
+                            <input id="name" type="text" name="name" placeholder="example name" required>
+                            <label for="emailAddress">E-mail:*</label>
+                            <input id="emailAddress" type="text" name="_replyto" placeholder="example@example.com" required>
+                            <label for="message">Message*:</label>
+                            <textarea id="message" name="message" rows="8" required></textarea>
+                            <br>
                             <input id="submitButton" type="submit" value="Send" disabled="disabled">
                             <input id="resetButton" type="reset" value="Reset">
-                            </form>
+                        </form>
                     </div>
                 </div>
-                <div> 
-                        <span id="textFooter">
-                            Page created and owned by Kamil Brodziak. All rights reserved.
-                        </span>
-                </div>
+                <footer> 
+                    <span id="textFooter">
+                        Page created and owned by Kamil Brodziak. All rights reserved.
+                    </span>
+                </footer>
             </div>
-        <script src="scripts/navigation.js"></script>
         <script src="scripts/script.js"></script> 
 
     </body>

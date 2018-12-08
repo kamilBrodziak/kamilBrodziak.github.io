@@ -9,44 +9,44 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/navigation.css">
         <link rel="stylesheet" type="text/css" href="styles/skills.css">
-
-
+        <script src="scripts/skills.js" async></script> 
     </head>
-    <body onload="changeActivePageInMenu(document.getElementsByClassName('page_menu')[2])">
+    <body>
         <div id="container">
             <nav>
                 <ul id="sideMenu">
-                    <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
+                    <li class="menuOption">
                         <a href="index.html" class="links">
-                            <img src="images/homeMenu.png" alt="Main"/>Main
+                            <img src="images/homeMenu.png" alt="Main"/>
+                            Main
                         </a>
                     </li>
-                    <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
+                    <li class="menuOption">
                         <a href="aboutMe.html" class="links">
-                            <img src="images/articlesMenu.png" alt="About me"  />
+                            <img src="images/articlesMenu.png" alt="About me"/>
                             About me
                         </a>
                     </li>
-                    <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
+                    <li class="menuOption" id="actualPage">
                         <a href="skills.html" class="links" >
                             <img src="images/cv.png" alt="CV"/>
                             CV
                         </a>
                     </li>
-                    <li class="pageMenuLink" onclick="changeActivePageInMenu(this)">
+                    <li class="menuOption">
                         <a href="projects.html" class="links">
-                            <img src="images/projects.png" alt="Projects"  />
+                            <img src="images/projects.png" alt="Projects"/>
                             Projects
                         </a>
                     </li>
-                    <li class="pageMenuLink" onclick="changeActivePmenuhoverageInMenu(this)">
+                    <li class="menuOption">
                         <a href="contact.html" class="links">
-                            <img src="images/contact.png" alt="Contact"  />
+                            <img src="images/contact.png" alt="Contact"/>
                             Contact
                         </a>
                     </li>
                 </ul>
-                <div>
+                <div id="contactBox">
                     <a target="blank" href="https://www.facebook.com/KamilPretendent/" title="Facebook">
                         <img class="socialIcons" src="images/facebook.png" alt="Facebook" 
                             onmouseover="this.src='images/facebookhover.png';" 
@@ -57,7 +57,6 @@
                             onmouseover="this.src='images/instagramhover.png';" 
                             onmouseout="this.src='images/instagram.png';"/>
                     </a>
-                    <br>
                     <a href="mailto:kamilb@pretendenci.pl" title="Napisz do mnie" > 
                         <img class="socialIcons" src="images/gmail.png" alt="E-mail" 
                             onmouseover="this.src='images/gmailhover.png';" 
@@ -76,7 +75,6 @@
                             <h1>Kamil Brodziak CV</h1>
                             <img src="images/meForCV.jpg" alt="My photo">
                         </section>
-                        <br><br><br>
                         <h2>Personal information</h2>
                         <table id="personal">
                             <tr>
@@ -100,7 +98,6 @@
                                 <th>Cracow</th>
                             </tr>
                         </table>
-                        <br><br>
                         <h2>Education</h2>
                         <table id="education">
                             <tr>
@@ -126,7 +123,6 @@
                         </table>
                     </article>
                     <article id="secondPage">
-                            <br><br><br>
                             <h2>Languages</h2>
                             <table id="languages">
                                 <tr>
@@ -138,7 +134,6 @@
                                     <th>native</th>
                                 </tr>
                             </table>
-                            <br><br>
                             <h2>IT skills</h2>
                             <table id="itLanguages">
                                 <tr>
@@ -170,7 +165,6 @@
                                     <th>Factory, Builder, Iterator, DAO, MVC, GIT</th>
                                 </tr>
                             </table>
-                            <br><br>
                             <h2>Hobby</h2>
                             <table id="hobbys">
                                     <tr>
@@ -193,8 +187,5 @@
                         </span>
                 </footer>
             </div>
-        <script src="scripts/skills.js"></script> 
-        <script src="scripts/navigation.js"></script>
-
     </body>
 </html>

@@ -4,18 +4,38 @@ function validateEmail(email) {
   }
   
 const email = document.getElementById("emailAddress");
-email.addEventListener("focusout", validate);
+const name = document.getElementById("name");
+const message = document.getElementById("message");
 
-function validate()  {
+email.addEventListener("keyup", validateInput);
+name.addEventListener("keyup", validateInput);
+message.addEventListener("keyup", validateInput);
+
+
+function validateInput() {
     var submit = document.getElementById("submitButton");
+    var isProperEmail = validateEmailForm();
+    var isEmptyName = isEmpty(name);
+    var isEmptyMessage = isEmpty(message);
 
-    if (validateEmail(email.value)) {
-        email.removeAttribute("class");
+    if(isProperEmail && !isEmptyName && !isEmptyMessage) {
         submit.removeAttribute("disabled");
         return true;
     }
     submit.setAttribute("disabled", "disabled");
+    return false;
+}
+
+function isEmpty(input) {
+    return input.value === "";
+}
+
+function validateEmailForm()  {
+    if (validateEmail(email.value)) {
+        email.removeAttribute("class");
+        return true;
+    }
     email.setAttribute("class", "invalidOutput");
     return false;
-};
+}
   

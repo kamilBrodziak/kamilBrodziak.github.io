@@ -61,52 +61,6 @@ nav {
     border-width: 5px 0px 5px 0px;
     padding: 4% 0px 0px 8%;
 }
-@media only screen and (max-width: 767px) {
-    nav {
-        flex-direction: row;
-        border-right: 0;
-        border-bottom: 7px groove silver;
-    }
-    #sideMenu {
-        flex-direction: row;
-        height: 100%;
-        width: 92%;
-        margin-left: 0;
-    }
-
-    #sideMenu li {
-        margin-right: 0;
-        width: 20% !important;
-        height: 100%;
-        border-width: 2px 5px 0px 5px;
-        margin-left: 0;
-    }
-
-    .menuOption a img {
-        height: 76%;
-        width: 56%;
-    }
-    
-    #sideMenu li:hover, .menuOption:active, #sideMenu #actualPage {
-        width: 18% !important;
-        border: groove silver;
-        border-width: 4px 5px 10px 5px !important;
-        margin-left: 0 !important;
-    }
-
-    #contactBox {
-        height: 100%;
-        width: 20%;
-        border-width: 0px 8px 0px 8px;
-        margin: 0 !important;
-        padding: 0 0 0 1% !important;
-
-    }
-
-    #contactBox img.socialIcons {
-        padding: 0;
-    }
-}
 
 #contactBox img.socialIcons {
     padding: 6% 0px 0px 6%;
@@ -139,4 +93,60 @@ a.links:link, a.links:visited, a.links:hover, a.links:active
 a.links:hover, a.links:active
 {
     color: #DEDEDE;
+}
+
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: row;
+        border-right: 0;
+        border-bottom: 7px groove silver;
+    }
+    #sideMenu {
+        flex-direction: row;
+        height: 100%;
+        width: 92%;
+        margin-left: 0;
+    }
+
+    #sideMenu li {
+        margin-right: 0;
+        width: 20%;
+        height: 100%;
+        border-width: 2px 5px 0px 5px;
+        margin-left: 0;
+    }
+
+    .menuOption a {
+        font-size: 3vw;
+
+    }
+
+    .menuOption a img {
+        height: 50%;
+        width: 80%;
+    }
+    
+    #sideMenu li:hover, .menuOption:active, #sideMenu #actualPage {
+        width: 20%;
+        border: groove silver;
+        border-width: 4px 5px 10px 5px;
+        margin-left: 0;
+    }
+
+    #contactBox {
+        height: 100%;
+        width: 20%;
+        border-width: 0px 8px 0px 8px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #contactBox img.socialIcons {
+        padding: 8% 0 0 8%;
+    }
+
+    footer {
+        font-size: 3vw;
+    }
 }

@@ -17,12 +17,18 @@ var isFirstActive = true;
 
 first.onclick = function() {
     if(!isFirstActive) {
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         first.style.animation = 'none';
         second.style.animation = 'none';
         first.offsetHeight;
         second.offsetHeight;
-        first.style.setProperty("--m", "-45deg");
-        second.style.setProperty("--n", "45deg");
+        if(width > 700) {
+            first.style.setProperty("--m", "-45deg");
+            second.style.setProperty("--n", "45deg");
+        } else {
+            first.style.setProperty("--m", "-70deg");
+            second.style.setProperty("--n", "70deg");
+        }
         first.style.animation = 'firstPageActivate 2s ease forwards';
         second.style.animation = 'secondPageActivate 2s ease-in reverse forwards';
         first.style.zIndex = 16;
@@ -32,12 +38,18 @@ first.onclick = function() {
 
 second.onclick = function() {
     if(isFirstActive) {
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         first.style.animation = 'none';
         second.style.animation = 'none';
         first.offsetHeight;
         second.offsetHeight;
-        first.style.setProperty("--m", "45deg");
-        second.style.setProperty("--n", "-45deg");
+        if(width > 700) {
+            first.style.setProperty("--m", "45deg");
+            second.style.setProperty("--n", "-45deg");
+        } else {
+            first.style.setProperty("--m", "70deg");
+            second.style.setProperty("--n", "-70deg");
+        }
         first.style.animation = 'firstPageActivate 2s ease-in reverse forwards';
         second.style.animation = 'secondPageActivate 2s ease forwards';
         second.style.zIndex = 16;

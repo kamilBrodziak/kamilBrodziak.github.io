@@ -16,8 +16,8 @@ body {
 
 #container {
     display: grid;
-    grid-template-columns: 5% 1fr;
-    grid-template-rows: 1fr 50px;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: 95% 1fr;
     grid-template-areas:
         "mainMenu content"
         "mainMenu content"
@@ -31,6 +31,24 @@ body {
 #middleField {
         grid-area: content;
         background-color: rgba(255, 255, 255, 0.9);
-        margin: 0px;
-        padding: 0px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 13% 82% 5%;
+        grid-template-areas:
+            "mainMenu"
+            "content"
+            "bottomFooter";
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
 }

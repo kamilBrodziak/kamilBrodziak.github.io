@@ -9,6 +9,7 @@
 }
 
 #middleField h2 {
+    margin-top: -2%;
     font-size: 1.8vw;
 }
 
@@ -22,6 +23,8 @@
     font-size: 1.2vw;
     width: 60%;
     margin: auto;
+    margin-top: -3%;
+
     text-align: justify;
 }
 

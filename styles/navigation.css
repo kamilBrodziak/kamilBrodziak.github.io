@@ -61,7 +61,7 @@ nav {
     border-width: 5px 0px 5px 0px;
     padding: 4% 0px 0px 8%;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
     nav {
         flex-direction: row;
         border-right: 0;
@@ -76,7 +76,7 @@ nav {
 
     #sideMenu li {
         margin-right: 0;
-        width: 18%;
+        width: 20% !important;
         height: 100%;
         border-width: 2px 5px 0px 5px;
         margin-left: 0;

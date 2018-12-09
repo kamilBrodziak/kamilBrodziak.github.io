@@ -9,7 +9,6 @@
 }
 
 #middleField h2 {
-    margin-top: -2%;
     font-size: 1.8vw;
 }
 
@@ -23,7 +22,6 @@
     font-size: 1.2vw;
     width: 60%;
     margin: auto;
-    margin-top: -3%;
 
     text-align: justify;
 }
@@ -51,6 +49,7 @@
         font-size: 5.5vw;
     }
     #middleField h2 {
+        margin-top: -2%;
         font-size: 4vw;
     }
     #middleField h3 {
@@ -58,6 +57,7 @@
     }
 
     #middleField ul {
+        margin-top: -3%;
         width: 90%;
         font-size: 3vw;
     }

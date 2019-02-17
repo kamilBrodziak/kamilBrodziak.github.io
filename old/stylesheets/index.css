@@ -1,0 +1,64 @@
+#middleField {
+    text-align: center;
+}
+
+#middleField h1 {
+    font-size: 3vw;
+    margin-top: 5%;
+    text-shadow: 0.1vw 0.1vw 0.1vw black;
+}
+
+#middleField h2 {
+    font-size: 1.8vw;
+}
+
+#middleField h3 {
+    font-size: 1.5vw;
+}
+
+#middleField ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2vw;
+    width: 60%;
+    margin: auto;
+
+    text-align: justify;
+}
+
+#middleField ul li {
+    padding: 1%;
+    border-bottom: 6px solid;
+    border-image: linear-gradient(to right, silver ,rgba(228, 228, 228),  transparent);
+    border-image-slice: 1;
+  }
+
+.mainLinks {
+    text-decoration: none;
+    color: black;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+#middleField p {
+    font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 767px) {
+    #middleField h1 {
+        font-size: 5.5vw;
+    }
+    #middleField h2 {
+        margin-top: -2%;
+        font-size: 4vw;
+    }
+    #middleField h3 {
+        font-size: 3.8vw;
+    }
+
+    #middleField ul {
+        margin-top: -3%;
+        width: 90%;
+        font-size: 3vw;
+    }
+}

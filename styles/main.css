@@ -1,57 +1,30 @@
-body, #container, #middleField {
+html, body {
+    /*width: 100vw;*/
+    height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    overflow-x: hidden;
 }
 
 body {
     background-image: url('../images/tlo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-color: #b2b2b2;
-    background-attachment: fixed;
-    margin: 0px;
-    height: 100vh;
-    width: 100vw;
+    /*background-attachment: fixed;*/
+    background-position-x: 50%;
+    background-size: cover;
 }
 
-#container {
-    display: grid;
-    grid-template-columns: 5% 95%;
-    grid-template-rows: 95% 1fr;
-    grid-template-areas:
-        "mainMenu content"
-        "mainMenu content"
-        "mainMenu bottomFooter";
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-#middleField {
-        grid-area: content;
-        background-color: rgba(255, 255, 255, 0.9);
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-}
-
-@media only screen and (max-width: 767px) {
-    body {
-        height: 100vmax;
-    }
-    #container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 13% 82% 5%;
-        grid-template-areas:
-            "mainMenu"
-            "content"
-            "bottomFooter";
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-    }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

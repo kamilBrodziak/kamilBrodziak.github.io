@@ -1,0 +1,130 @@
+#contact {
+    width: 80%;
+    height: 80%;
+    font-size: 1.4vw;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact h1 {
+    font-size: 6vw;
+    text-shadow: 2px 2px silver, 
+                4px 4px silver, 
+                6px 6px silver;
+    animation: textAnimation 10s ease infinite;
+}
+
+#emailForm input, #emailForm textarea{
+    outline: none;
+    width: 70%;
+    box-sizing: border-box;
+    border: 8px groove silver;
+    border-radius: 20px 10px;
+    font-size: 1.4vw;
+    transition: all 0.4s ease;
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+#emailForm #message{
+    overflow-y: scroll;
+    resize: none;
+}
+
+#emailForm label {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8vw;
+}
+
+#submitButton, #resetButton {
+    background-image: url("../../images/menu.jpg");
+    color: silver;
+    font-size: 1.8vw;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 767px) {
+    #contact {
+        margin-top: 10%;
+    }
+
+    #contact h1 {
+        font-size: 7vw;
+    }
+
+    #emailForm input, #emailForm textarea{
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    #emailForm label {
+        font-size: 4vw;
+    }
+    #submitButton, #resetButton {
+        font-size: 4vw;
+    }
+}
+
+#submitButton:enabled:hover, #resetButton:enabled:hover,
+#submitButton:active, #resetButton:active {
+    background-image: url("../../images/menuhover.jpg");
+}
+
+#submitButton:active, #resetButton:active {
+    border-bottom: 2px;
+    transform: translateY(15px);
+}
+
+#emailForm input:disabled {
+    cursor: not-allowed;
+    color: rgba(100, 99, 99);
+    border: 8px groove rgba(100, 99, 99);
+
+}
+
+textarea:focus, input:not(#resetButton):not(#submitButton):focus{
+    border-color: red !important;
+}
+
+.invalidOutput {
+    color: red;
+}
+
+#message::-webkit-scrollbar {
+    width: 2%;
+}
+#message::-webkit-scrollbar-button {
+    background-color: silver;
+}
+#message::-webkit-scrollbar-thumb {
+    background-color: silver;
+}
+#message::-webkit-scrollbar-track {
+    background-color: rgb(235, 235, 235);
+}
+
+#message::-webkit-scrollbar-button:hover, #message::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(133, 130, 130);
+}
+
+
+
+@keyframes textAnimation {
+    94% {
+        transform: translateX(10px);
+    }
+    96% {
+        transform: translateX(-20px);
+    }
+    98% {
+        transform: translateX(5px);
+    }
+    99% {
+        transform: translateX(-10px);
+    }
+}

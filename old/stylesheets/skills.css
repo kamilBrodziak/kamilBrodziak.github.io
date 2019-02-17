@@ -1,0 +1,230 @@
+#middleField article {
+    position: absolute;
+    width: 45%;
+    height: 85%;
+    margin-top: 2%;
+    box-shadow: 5px 5px 30px 3px #5c5b5b;
+    overflow: hidden;
+}
+
+#firstPage {
+    background: rgba(255, 255, 255, 1);
+    margin-left: 20%;
+    z-index: 16;
+    cursor: default;
+}
+
+#secondPage {
+    background: rgba(98, 98, 98, 0.9);
+    margin-left: 25%;
+    z-index: 15;
+    top: 5%;
+    cursor: pointer;
+}
+
+@keyframes firstPageActivate {
+    0% {
+        z-index: 15;
+        top: 5%;
+        margin-left: 20%;
+        background: rgba(98, 98, 98, 0.9);
+        cursor: pointer;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    49% {
+        z-index: 15;
+    }
+    50% {
+        margin-left: 5%;
+        z-index: 16;
+        top: 0%;
+        transform: rotate3d(0, 1, 0, var(--m, deg));
+    }
+    100% {
+        cursor: default;
+        background: rgba(255, 255, 255, 1);
+        margin-left: 20%;
+        z-index: 16;
+        top: 0%;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes secondPageActivate {
+    0% {
+        z-index: 15;
+        top: 5%;
+        margin-left: 25%;
+        background: rgba(98, 98, 98, 0.9);
+        cursor: pointer;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    49% {
+        z-index: 15;
+    }
+    50% {
+        margin-left: 45%;
+        z-index: 16;
+        top: 0;
+        transform: rotate3d(0, 1, 0, var(--n, deg));
+    }
+    100% {
+        cursor: default;
+        margin-left: 25%;
+        background: rgba(255, 255, 255, 1);
+        z-index: 16;
+        top: 0;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+
+#inactivePage:hover {
+    cursor: pointer;
+}
+
+#cvHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    border-top: 12px groove silver;
+    border-bottom: 12px groove silver;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2vw;
+    text-shadow: 5px 5px 30px black;
+    vertical-align: middle;
+    float: left;
+    height: 20%;
+    margin-right: 2%;
+}
+
+#firstPage img {
+    margin-top: 1%; 
+    margin-bottom: 1%; 
+    width: 20%;
+    height: 20%;
+}
+
+h2 {
+    margin-left: 5%;
+    font-size: 1.5vw;
+}
+
+table {
+    border-top: 4px groove silver;
+    border-bottom: 4px groove silver;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1vw;
+}
+
+th:first-child {
+    padding-left: 10%;
+}
+
+#personal th, #languages th, #itLanguages th{
+    width: 45%;
+    text-align: start;
+}
+
+#education th{
+    width: 40%;
+    text-align: start;
+}
+
+#education th:last-child{
+    width: 10%;
+}
+
+@media only screen and (max-width: 767px) {
+    #middleField article {
+        position: absolute;
+        top: 20%;
+        width: 70%;
+        height: 65%;
+    }
+
+    #firstPage {
+        margin-left: 10%;
+    }
+    
+    #secondPage {
+        margin-left: 20%;
+        top: 25% !important;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+    
+    h2 {
+        font-size: 3vw;
+    }
+
+    table {
+        margin-top: -3%;
+        margin-bottom: 1%;
+        font-size: 2vw;
+    }
+
+
+    @keyframes firstPageActivate {
+        0% {
+            z-index: 15;
+            top: 25%;
+            margin-left: 10%;
+            background: rgba(98, 98, 98, 0.9);
+            cursor: pointer;
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+        49% {
+            z-index: 15;
+        }
+        50% {
+            margin-left: 5%;
+            z-index: 16;
+            top: 20%;
+            transform: rotate3d(0, 1, 0, var(--m, deg));
+        }
+        100% {
+            cursor: default;
+            background: rgba(255, 255, 255, 1);
+            margin-left: 10%;
+            z-index: 16;
+            top: 20%;
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+    }
+    
+    @keyframes secondPageActivate {
+        0% {
+            z-index: 15;
+            top: 25%;
+            margin-left: 20%;
+            background: rgba(98, 98, 98, 0.9);
+            cursor: pointer;
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+        49% {
+            z-index: 15;
+        }
+        50% {
+            margin-left: 35%;
+            z-index: 16;
+            top: 20%;
+            transform: rotate3d(0, 1, 0, var(--n, deg));
+        }
+        100% {
+            cursor: default;
+            margin-left: 20%;
+            background: rgba(255, 255, 255, 1);
+            z-index: 16;
+            top: 20%;
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+    }
+}
